@@ -12,6 +12,7 @@
         <gmavenVersion>1.4</gmavenVersion>
         <gmavenProviderSelection>2.0</gmavenProviderSelection>
         <groovyVersion>2.4.5</groovyVersion>
+        <seleniumVersion>2.52.0</seleniumVersion>
     </properties>
 
     <dependencies>
@@ -23,12 +24,17 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-firefox-driver</artifactId>
-            <version>2.45.0</version>
+            <version>${seleniumVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
-            <version>2.45.0</version>
+            <version>${seleniumVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>${seleniumVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.gebish</groupId>
