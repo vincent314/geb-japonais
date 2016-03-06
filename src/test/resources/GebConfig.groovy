@@ -1,12 +1,21 @@
-import org.openqa.selenium.chrome.ChromeDriver
-import org.openqa.selenium.chrome.ChromeOptions
+import org.openqa.selenium.firefox.FirefoxDriver
 
-driver = {
-    new ChromeDriver(
-            new ChromeOptions(binary: new File('/usr/bin/chromium-browser'))
-    )
+driver = { new FirefoxDriver()
+//    new ChromeDriver(
+//            new ChromeOptions(binary: new File('/usr/bin/chromium-browser'))
+//    )
 }
 
-baseUrl = "http://localhost:9000"
+environments {
+    development {
+        baseUrl = "http://localhost:9000"
+    }
+
+    prod {
+        baseUrl = "http://japonais.ovh"
+    }
+}
 
 reportsDir = "target/reports"
+
+test= "toto"
